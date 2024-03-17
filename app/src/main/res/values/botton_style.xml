@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_style" parent="@style/Widget.AppCompat.Button.Borderless">
+       <item name="android:background">#E6DDC1</item>
+        <item name="colorButtonNormal">#bdb76b</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>
