@@ -1,8 +1,10 @@
 package com.example.lesson18
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 @SuppressLint("StaticFieldLeak")
 private var textViewData:TextView?=null
@@ -13,6 +15,11 @@ class MainActivity3 : AppCompatActivity() {
         setContentView(R.layout.activity_main3)
         textViewData = findViewById(R.id.text_view_data)
         getData()
+        val button= findViewById<Button>(R.id.button_activity3)
+        button.setOnClickListener {
+            val intent = Intent(this, ListOfWatchesActivity::class.java)
+            startActivity(intent)
+        }
     }
         @SuppressLint("SetTextI18n")
         private fun getData() {
